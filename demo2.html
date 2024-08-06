@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descendant selectors</title>
+    <style>
+        /* Descendent selector
+        selecting all p tags within the div */
+         p{
+        color: red;
+    }
+    /* Child selector: '>' selects all p which are immediate child of div */
+    div > p{
+        color: cyan;
+    }
+    /* Adjescent sibling selector  */
+    div+p{
+        color: blueviolet;
+    }
+    /* Genral sibling selectors:
+    selects all p tags which are sibling of div */
+    div ~ p{
+        color: coral;
+    }
+
+    </style>  
+</head>
+<body>
+  <div>
+    <h2>This is div1- h2</h2>
+    <p>Para inside div1</p>
+    <section>
+        <p>Para inside section</p> 
+        </section>
+        <p>para after section</p>
+  </div>  
+  <p>first  para after the div</p>
+  <h6>Heading</h6>
+  <p>last para after th div</p>
+</body>
+</html>
